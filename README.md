@@ -80,4 +80,4 @@ You can find a very simple implementation inside the 'Post.php' class and a post
 - ```  getRightPost($post) ``` --> This function must be implemented adapting it to your posts categories in order to make the entire class properly work
 
 ## LICENSE
-This software is completely free; see <a href="https://www.gnu.org/licenses/gpl-3.0.txt">GNU General Public License.</a>
+This software is completely free; see <a href="LICENSE">GNU General Public License.</a>
