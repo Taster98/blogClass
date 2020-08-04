@@ -3,7 +3,7 @@
 class DbClass{
     protected $conn = null;
     public function openConn(){
-        //CHANGE THESE DATA WITH YOURS
+        /***CHANGE THESE DATA WITH YOURS***/
         $this->conn = new mysqli("localhost","username","password","databasename");
         return $this->conn;
     }

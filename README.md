@@ -61,8 +61,23 @@ class DbClass{
 ?>
 ```
 
-Then, you will simply have to import the php class blogClass.php into your project with something like:
+Then, you will simply have to import the php class Post.php into your project with something like:
 ```
-include("/your/path/blogClass.php");
+include("/your/path/Post.php");
 ```
-# To be continued...
+You then need to edit the body of 'getRightPost' function in order to be able to handle your specific post typologies.
+You can find a very simple implementation inside the 'Post.php' class and a post example inside 'Example.php'
+
+### WARNING: You first need to create the database in order to see the example working
+
+## Functions of the class:
+- ``` insertPost($json, $type) ``` --> This function is used to insert a new post of a specific category inside your database 
+- ``` updatePost($post_id,$json,$type) ``` --> This function is used to update post of a specific category and a specific id inside your database 
+- ```  deletePost($post_id) ``` --> This function is used to delete a post of a specific id from your database 
+- ```  getPost($post_id) ``` --> This function is used to get a single specific post by post_id 
+- ```  getAllPosts() ``` --> This function is used to get all posts in the db 
+- ```  getAllPostsSpecific($type,$order) ``` --> This function is used to fetch all posts of a specific Type and in a specific Order (desc for descending order, asc for ascending order)
+- ```  getRightPost($post) ``` --> This function must be implemented adapting it to your posts categories in order to make the entire class properly work
+
+## LICENSE
+This software is completely free; see <a href="https://www.gnu.org/licenses/gpl-3.0.txt">GNU General Public License.</a>
